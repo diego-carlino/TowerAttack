@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ManaManager : MonoBehaviour
 {
     [SerializeField] private Slider manaBar;
+    [SerializeField] private TextMeshProUGUI manaText;
     [SerializeField] private int maxMana = 100;
     private float currentMana;
 
     void Start()
     {
+        manaBar.maxValue = maxMana;
         currentMana = maxMana;
         UpdateUI();
     }
@@ -29,5 +32,6 @@ public class ManaManager : MonoBehaviour
     private void UpdateUI()
     {
         manaBar.value = currentMana;
+        manaText.text = "Mana : " + currentMana.ToString("0") + " / " + maxMana.ToString();
     }
 }

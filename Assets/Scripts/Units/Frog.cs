@@ -4,7 +4,6 @@ public class Unit : MonoBehaviour
 {
     [Header("Unit's settings")]
     [SerializeField] private string unitName;
-    [SerializeField] private int health = 100;
     [SerializeField] private int manaCost = 10;
     [SerializeField] private float moveSpeed = 3f;
 
