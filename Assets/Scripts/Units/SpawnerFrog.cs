@@ -21,10 +21,8 @@ public class Spawner : MonoBehaviour
 
         int cost = unitPrefab.GetComponent<Unit>().GetManaCost();
 
-        // 3. On demande au ManaManager si on peut payer
         if (manaManager.TrySpendMana(cost))
         {
-            // 4. Si oui, on invoque l'unité
             Instantiate(unitPrefab, spawnPoint.position, Quaternion.identity, parentFolder);
         }
     }

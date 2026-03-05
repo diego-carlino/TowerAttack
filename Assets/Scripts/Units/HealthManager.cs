@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
 public void TakeDamage(int amount)
 {
     currentHealth -= amount;
-    Debug.Log("Vie restante de la grenouille : " + currentHealth); // AJOUTE CETTE LIGNE
+    Debug.Log("Remaining health : " + currentHealth);
 
     if (currentHealth < 0) currentHealth = 0;
 

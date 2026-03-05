@@ -34,7 +34,7 @@ public class Goal : MonoBehaviour
         if (pointsTextObject != null)
         {
             var t = pointsTextObject.GetComponent<TextMeshProUGUI>();
-            if (t != null) t.text = "Objectif : " + goalPoints;
+            if (t != null) t.text = "Goal : " + goalPoints;
         }
     }
 }
