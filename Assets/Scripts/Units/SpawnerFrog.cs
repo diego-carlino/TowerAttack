@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class SpawnerFrog : MonoBehaviour
 {
     [SerializeField] private GameObject unitPrefab;
 
@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform parentFolder;
 
-    [SerializeField] private ManaManager manaManager;
+    [SerializeField] private ManaBar manaManager;
 
     public void InvoquerUnite()
     {
@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
             return;
         }
 
-        int cost = unitPrefab.GetComponent<Unit>().GetManaCost();
+        int cost = unitPrefab.GetComponent<Frog>().GetManaCost();
 
         if (manaManager.TrySpendMana(cost))
         {

@@ -15,12 +15,12 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Unit") || other.CompareTag("Enemy"))
+        if (other.CompareTag("Unit"))
         {
             goalPoints--;
             UpdateDisplay();
 
-            Destroy(other.transform.root.gameObject);
+            Destroy(other.gameObject);
 
             if (goalPoints <= 0 && victoryPanel != null)
             {

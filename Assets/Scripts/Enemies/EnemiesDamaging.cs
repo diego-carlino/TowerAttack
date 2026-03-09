@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemiesDamaging : MonoBehaviour
 {
-    [SerializeField] private int damageAmount = 150;
+    [SerializeField] private int damageToUnit = 150;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -10,8 +10,8 @@ public class EnemiesDamaging : MonoBehaviour
 
         if (playerHealth != null)
         {
-            playerHealth.TakeDamage(damageAmount);
-            Debug.Log("Enemy has inflicted " + damageAmount + " damages to the unit !");
+            playerHealth.TakeDamage(damageToUnit);
+            Debug.Log("Enemy has inflicted " + damageToUnit + " damages to the unit !");
         }
     }
 }

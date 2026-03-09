@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ManaManager : MonoBehaviour
+public class ManaBar : MonoBehaviour
 {
     [SerializeField] private Slider manaBar;
     [SerializeField] private TextMeshProUGUI manaText;
