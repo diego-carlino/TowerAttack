@@ -1891,6 +1891,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4306744596769806962, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6082741336387068475, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1916,6 +1921,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.6907261
       objectReference: {fileID: 0}
+    - target: {fileID: 6597876307369094126, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1934,7 +1944,7 @@ PrefabInstance:
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.463
+      value: -28.79
       objectReference: {fileID: 0}
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
