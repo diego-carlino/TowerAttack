@@ -10,17 +10,13 @@ public class Soldier : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
-        Debug.Log($"{enemyName} a maintenant {health} PV.");
+        Debug.Log($"{enemyName} got {health} HP.");
 
         if (health <= 0)
         {
             Die();
         }
     }
-
-
-
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -37,7 +33,7 @@ public class Soldier : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log($"{enemyName} a été détruit !");
+        Debug.Log($"{enemyName} has been destroyed !");
         Destroy(gameObject);
     }
 }

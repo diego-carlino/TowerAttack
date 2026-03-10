@@ -308,9 +308,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.35339117, y: 0.26106262}
+  m_Offset: {x: -0.37174952, y: 0.26106262}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.53999996, y: 0, z: 0.94, w: 1.3299999}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 5.03, y: 4.96}
     newSize: {x: 5.03, y: 4.96}
@@ -318,7 +318,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.6341047, y: 0.52212524}
+  m_Size: {x: 3.3893292, y: 0.52212524}
   m_EdgeRadius: 0
 --- !u!114 &2640738235881497127
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
   healthBar: {fileID: 1753451390004140887}
   healthText: {fileID: 1629968733878616215}
-  maxHealth: 100
+  maxHealth: 1000
 --- !u!114 &7991254889542214162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe071868d2e4d48b0dddfabe58ec75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Frog
-  unitName: 
+  unitName: Frog
   manaCost: 10
   moveSpeed: 3
   damageToEnemy: 50
@@ -783,7 +783,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.32866108, y: 1.8111356}
+  m_Offset: {x: -0.31642246, y: 1.8111356}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -793,7 +793,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.6712506, y: 3.6153052}
+  m_Size: {x: 3.8425937, y: 3.6153052}
   m_EdgeRadius: 0
 --- !u!114 &1583345324308263944
 MonoBehaviour:

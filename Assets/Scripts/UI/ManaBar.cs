@@ -4,10 +4,18 @@ using TMPro;
 
 public class ManaBar : MonoBehaviour
 {
+    public static ManaBar Instance;
+
     [SerializeField] private Slider manaBar;
     [SerializeField] private TextMeshProUGUI manaText;
     [SerializeField] private int maxMana = 100;
     private float currentMana;
+
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     void Start()
     {
@@ -24,7 +32,6 @@ public class ManaBar : MonoBehaviour
             UpdateUI();
             return true;
         }
-
         Debug.Log("Not enough mana !");
         return false;
     }
@@ -32,6 +39,6 @@ public class ManaBar : MonoBehaviour
     private void UpdateUI()
     {
         manaBar.value = currentMana;
-        manaText.text = "Mana : " + currentMana.ToString("0") + " / " + maxMana.ToString();
+        manaText.text = $"Mana : {currentMana:0} / {maxMana}";
     }
 }
