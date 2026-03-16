@@ -17,12 +17,6 @@ public class HealthManager : MonoBehaviour
 
 public void TakeDamage(int amount)
 {
-    Debug.Log($"Dégâts reçus : {amount}. Appelant : {gameObject.name}");
-
-
-
-
-
     currentHealth -= amount;
     Debug.Log("Remaining health : " + currentHealth);
 
