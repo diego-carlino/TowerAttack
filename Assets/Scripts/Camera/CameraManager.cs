@@ -4,12 +4,18 @@ using UnityEngine.InputSystem;
 public class CameraManager : MonoBehaviour
 {
     [Header("Mouvement")]
-    public float moveSpeed = 10f;
-    public Vector3 startPosition = new Vector3(0, 0, -10);
+    public float MoveSpeed = 10f;
+    public Vector3 StartPosition = new Vector3(0, 0, -10);
+
+    [Header("Limites du Niveau")]
+    public float MinX = -10f;
+    public float MaxX = 10f;
+    public float MinY = -5f;
+    public float MaxY = 5f;
 
     void Start()
     {
-        transform.position = startPosition;
+        transform.position = StartPosition;
         transform.rotation = Quaternion.identity;
     }
 
@@ -32,6 +38,11 @@ public class CameraManager : MonoBehaviour
         if (kb.leftArrowKey.isPressed) move.x -= 1;
         if (kb.rightArrowKey.isPressed) move.x += 1;
 
-        transform.position += move.normalized * moveSpeed * Time.deltaTime;
+        Vector3 targetPosition = transform.position + move.normalized * MoveSpeed * Time.deltaTime;
+
+        float clampedX = Mathf.Clamp(targetPosition.x, MinX, MaxX);
+        float clampedY = Mathf.Clamp(targetPosition.y, MinY, MaxY);
+
+        transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
 }

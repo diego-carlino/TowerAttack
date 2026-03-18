@@ -307,9 +307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67da321ab04e6d74a9a58d503a4be930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
-  healthBar: {fileID: 314858064520172363}
-  healthText: {fileID: 6511859354141682116}
-  maxHealth: 1000
+  HealthBar: {fileID: 314858064520172363}
+  HealthText: {fileID: 6511859354141682116}
+  MaxHealth: 1000
 --- !u!114 &7034741759196584486
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class Frog : Unit
     {
         if (!isFighting)
         {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
         }
     }
 
@@ -21,7 +21,7 @@ public class Frog : Unit
             HealthManager enemyHealth = collision.transform.GetComponentInParent<HealthManager>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damageToEnemy);
+                enemyHealth.TakeDamage(DamageToEnemy);
             }
         }
     }

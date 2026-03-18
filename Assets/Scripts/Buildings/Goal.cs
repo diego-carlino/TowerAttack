@@ -3,13 +3,13 @@ using TMPro;
 
 public class Goal : MonoBehaviour
 {
-    public int goalPoints = 5;
-    public GameObject victoryPanel;
-    public GameObject pointsTextObject;
+    public int GoalPoints = 5;
+    public GameObject VictoryPanel;
+    public TextMeshProUGUI PointsText;
 
     void Start()
     {
-        if (victoryPanel != null) victoryPanel.SetActive(false);
+        if (VictoryPanel != null) VictoryPanel.SetActive(false);
         UpdateDisplay();
     }
 
@@ -17,24 +17,31 @@ public class Goal : MonoBehaviour
     {
         if (other.CompareTag("Unit"))
         {
-            goalPoints--;
+            GoalPoints--;
             UpdateDisplay();
 
             Destroy(other.gameObject);
 
-            if (goalPoints <= 0 && victoryPanel != null)
+            if (GoalPoints <= 0)
             {
-                victoryPanel.SetActive(true);
+                WinGame();
             }
         }
     }
 
     void UpdateDisplay()
     {
-        if (pointsTextObject != null)
+        if (PointsText != null)
         {
-            var t = pointsTextObject.GetComponent<TextMeshProUGUI>();
-            if (t != null) t.text = "Goal : " + goalPoints;
+            PointsText.text = "Congratulations ! You succeeded !";
+        }
+    }
+
+    void WinGame()
+    {
+        if (VictoryPanel != null)
+        {
+            VictoryPanel.SetActive(true);
         }
     }
 }

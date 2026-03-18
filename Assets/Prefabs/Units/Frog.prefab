@@ -331,9 +331,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67da321ab04e6d74a9a58d503a4be930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
-  healthBar: {fileID: 0}
-  healthText: {fileID: 0}
-  maxHealth: 100
+  HealthBar: {fileID: 1753451390004140887}
+  HealthText: {fileID: 1629968733878616215}
+  MaxHealth: 100
 --- !u!114 &7991254889542214162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,10 +346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffe071868d2e4d48b0dddfabe58ec75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Frog
-  unitName: Frog
-  manaCost: 10
-  moveSpeed: 3
-  damageToEnemy: 50
+  UnitName: 
+  ManaCost: 10
+  MoveSpeed: 30
+  DamageToEnemy: 50
 --- !u!1 &4259359172531995147
 GameObject:
   m_ObjectHideFlags: 0

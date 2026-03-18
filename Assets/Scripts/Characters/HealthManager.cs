@@ -4,27 +4,27 @@ using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
-    [SerializeField] private Slider healthBar;
-    [SerializeField] private TextMeshProUGUI healthText;
-    [SerializeField] private int maxHealth = 100;
-    private float currentHealth;
+    [SerializeField] private Slider HealthBar;
+    [SerializeField] private TextMeshProUGUI HealthText;
+    [SerializeField] private int MaxHealth = 100;
+    private float CurrentHealth;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = MaxHealth;
         UpdateUI();
     }
 
-public void TakeDamage(int amount)
+    public void TakeDamage(int amount)
 {
-    currentHealth -= amount;
-    Debug.Log("Remaining health : " + currentHealth);
+        CurrentHealth -= amount;
+    Debug.Log("Remaining health : " + CurrentHealth);
 
-    if (currentHealth < 0) currentHealth = 0;
+    CurrentHealth = Mathf.Clamp(CurrentHealth, 0, MaxHealth);
 
     UpdateUI();
 
-    if (currentHealth <= 0)
+    if (CurrentHealth <= 0)
     {
         Die();
     }
@@ -32,8 +32,8 @@ public void TakeDamage(int amount)
 
     private void UpdateUI()
     {
-        healthBar.value = currentHealth;
-        healthText.text = "HP : " + currentHealth.ToString("0") + " / " + maxHealth;
+        HealthBar.value = CurrentHealth;
+        HealthText.text = "HP : " + CurrentHealth.ToString("0") + " / " + MaxHealth;
     }
 
     private void Die()

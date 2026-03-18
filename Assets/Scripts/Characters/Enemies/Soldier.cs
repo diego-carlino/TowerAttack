@@ -3,16 +3,16 @@ using UnityEngine;
 public class Soldier : MonoBehaviour
 {
     [Header("Enemy's Stats")]
-    [SerializeField] private string enemyName = "Soldier";
-    [SerializeField] private int health = 100;
-    [SerializeField] private int damageToUnit = 150;
+    [SerializeField] private string EnemyName = "Soldier";
+    [SerializeField] private int Health = 100;
+    [SerializeField] private int DamageToUnit = 150;
 
     public void TakeDamage(int amount)
     {
-        health -= amount;
-        Debug.Log($"{enemyName} got {health} HP.");
+        Health -= amount;
+        Debug.Log($"{EnemyName} got {Health} HP.");
 
-        if (health <= 0)
+        if (Health <= 0)
         {
             Die();
         }
@@ -25,7 +25,7 @@ public class Soldier : MonoBehaviour
             HealthManager playerHealth = collision.transform.GetComponentInParent<HealthManager>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damageToUnit);
+                playerHealth.TakeDamage(DamageToUnit);
             }
         }
     }
@@ -33,7 +33,7 @@ public class Soldier : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log($"{enemyName} has been destroyed !");
+        Debug.Log($"{EnemyName} has been destroyed !");
         Destroy(gameObject);
     }
 }

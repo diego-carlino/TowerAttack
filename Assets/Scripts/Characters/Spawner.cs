@@ -2,28 +2,28 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject unitPrefab;
+    [SerializeField] private GameObject UnitPrefab;
 
-    [SerializeField] private Vector3 spawnPosition = Vector3.zero;
+    [SerializeField] private Vector3 SpawnPosition = Vector3.zero;
 
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private Transform parentFolder;
+    [SerializeField] private Transform SpawnPoint;
+    [SerializeField] private Transform ParentFolder;
 
-    [SerializeField] private ManaBar manaManager;
+    [SerializeField] private ManaManager ManagerMana;
 
     public void InvokeUnit()
     {
-        if (unitPrefab == null || manaManager == null)
+        if (UnitPrefab == null || ManagerMana == null)
         {
             Debug.LogError("Missing prefab or manaManager");
             return;
         }
 
-        int cost = unitPrefab.GetComponent<Unit>().GetManaCost();
+        int cost = UnitPrefab.GetComponent<Unit>().GetManaCost();
 
-        if (manaManager.TrySpendMana(cost))
+        if (ManagerMana.TrySpendMana(cost))
         {
-            Instantiate(unitPrefab, spawnPoint.position, Quaternion.identity, parentFolder);
+            Instantiate(UnitPrefab, SpawnPoint.position, Quaternion.identity, ParentFolder);
         }
     }
 }
