@@ -348,7 +348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Frog
   UnitName: 
   ManaCost: 10
-  MoveSpeed: 30
+  MoveSpeed: 20
   DamageToEnemy: 50
 --- !u!1 &4259359172531995147
 GameObject:

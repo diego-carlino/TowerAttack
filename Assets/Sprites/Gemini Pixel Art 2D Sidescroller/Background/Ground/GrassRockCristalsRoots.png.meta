@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: addcd90fd3c35334da424ad6101a6024
+guid: a89259d3cef888f4eb3d1ab2c368a13e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 9061481642600100514
-    second: TreeOwl_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,15 +37,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -126,23 +123,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeOwl_0
+      name: GrassRockCristalsRoots_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1600
-        height: 453
+        x: 65
+        y: 179
+        width: 395
+        height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 18, z: 0, w: 55}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2a2f6ed4b89d0cd70800000000000000
-      internalID: 9061481642600100514
+      spriteID: 69fef5383d5f0764c9c19e243f886d04
+      internalID: 1713520642
       vertices: []
       indices: 
       edges: []
@@ -151,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 02026fe6b0576e144bfaed1a7b02d996
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +156,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TreeOwl_0: 9061481642600100514
+      GrassRockCristalsRoots_0: 1713520642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

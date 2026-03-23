@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2ab17291c6b13b48938c200152e5dac
+guid: 9a6d696c7bf933d4cb7cf2d219fde307
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -129,10 +129,10 @@ TextureImporter:
       name: RockCristalsRoots_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 2
+        y: 8
+        width: 489
+        height: 483
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

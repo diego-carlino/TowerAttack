@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f053d5827d56fc4d94adc1643b31188
+guid: 110dc49921c540543b33d053caf09bce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8791310394143804551
-    second: CuttedTree_0
+      213: -2527009667678556319
+    second: GrassRockCristalsRoots_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CuttedTree_0
+      name: GrassRockCristalsRoots_2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1600
-        height: 453
+        y: 2
+        width: 498
+        height: 498
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78c0421a932010a70800000000000000
-      internalID: 8791310394143804551
+      spriteID: 16faa0e88124eecd0800000000000000
+      internalID: -2527009667678556319
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CuttedTree_0: 8791310394143804551
+      GrassRockCristalsRoots_2_0: -2527009667678556319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

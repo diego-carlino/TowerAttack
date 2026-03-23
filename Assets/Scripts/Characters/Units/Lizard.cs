@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class Lizard : Unit
 {
+    private GameObject currentTarget;
 
     void FixedUpdate()
     {
+        if (isFighting && currentTarget == null)
+        {
+            isFighting = false;
+        }
+
         if (!isFighting)
         {
             transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
@@ -13,11 +19,11 @@ public class Lizard : Unit
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Contact détecté avec : " + collision.gameObject.name + " (Tag: " + collision.gameObject.tag + ")");
-
         if (collision.gameObject.CompareTag("Enemy"))
         {
             isFighting = true;
+            currentTarget = collision.gameObject;
+
             HealthManager enemyHealth = collision.transform.GetComponentInParent<HealthManager>();
             if (enemyHealth != null)
             {

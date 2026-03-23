@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f0cb27c89fb317f44b293c178ac84454
+guid: 0f634431f648a95428803f38e5c00b33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3574490019473050566
-    second: GrassRockCristalsRoots_0
+      213: -3012622690221554823
+    second: TreeShrooms_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassRockCristalsRoots_0
+      name: TreeShrooms_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 485
+        height: 513
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a343128044cd46ec0800000000000000
-      internalID: -3574490019473050566
+      spriteID: 9730013ff930136d0800000000000000
+      internalID: -3012622690221554823
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GrassRockCristalsRoots_0: -3574490019473050566
+      TreeShrooms_0: -3012622690221554823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

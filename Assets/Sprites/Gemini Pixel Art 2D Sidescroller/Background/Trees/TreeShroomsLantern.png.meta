@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 504d4317c26bfe34aacd56af55c9975b
+guid: cabf00be391aa7a409ab268c653ba536
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2527009667678556319
-    second: GrassRockCristalsRoots_2_0
+      213: 5551230173708678025
+    second: TreeShroomsLantern_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassRockCristalsRoots_2_0
+      name: TreeShroomsLantern_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 8
         width: 1024
-        height: 1024
+        height: 1497
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16faa0e88124eecd0800000000000000
-      internalID: -2527009667678556319
+      spriteID: 983f55a6e6ee90d40800000000000000
+      internalID: 5551230173708678025
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GrassRockCristalsRoots_2_0: -2527009667678556319
+      TreeShroomsLantern_0: 5551230173708678025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
