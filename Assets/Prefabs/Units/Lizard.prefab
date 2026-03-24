@@ -322,10 +322,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79cb503dd6767a4aa9d75bc0836a908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lizard
-  unitName: Lizard
-  manaCost: 20
-  moveSpeed: 2
-  damageToEnemy: 50
+  UnitName: Lizard
+  ManaCost: 10
+  MoveSpeed: 2
+  DamageToEnemy: 50
 --- !u!1 &2797669357793630716
 GameObject:
   m_ObjectHideFlags: 0

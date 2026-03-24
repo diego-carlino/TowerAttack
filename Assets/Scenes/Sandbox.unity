@@ -3602,6 +3602,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1710236092133542159, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 747840173}
+    - target: {fileID: 1710236092133542159, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225250822617861327, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225250822617861327, guid: c4c9c1865b031d941b616e4e92045cac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.484
+      objectReference: {fileID: 0}
     - target: {fileID: 4306744596769806962, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_BodyType
@@ -3655,12 +3675,12 @@ PrefabInstance:
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.09
+      value: -28.07
       objectReference: {fileID: 0}
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.75
+      value: -16.31
       objectReference: {fileID: 0}
     - target: {fileID: 8536766771599450316, guid: c4c9c1865b031d941b616e4e92045cac,
         type: 3}

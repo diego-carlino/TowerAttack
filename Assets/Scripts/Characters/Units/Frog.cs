@@ -2,12 +2,19 @@ using UnityEngine;
 
 public class Frog : Unit
 {
+    public Animator animator;
 
     void FixedUpdate()
     {
         if (!isFighting)
         {
             transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
+
+            animator.SetFloat("Speed", MoveSpeed);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0f);
         }
     }
 
