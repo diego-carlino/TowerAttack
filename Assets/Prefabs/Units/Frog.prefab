@@ -897,7 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Frog
   UnitName: Frog
   ManaCost: 10
-  MoveSpeed: 4
+  MoveSpeed: 1
   DamageToEnemy: 50
   animator: {fileID: 2578345521142510659}
 --- !u!95 &2578345521142510659
